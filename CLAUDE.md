@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Rules
 
 - [Architecture Rules](.claude/rules/architecture.md) — 관심사 분리, 상태관리(TanStack Query / Jotai), vanilla-extract 스타일, 파일 네이밍, FSD 단방향 의존 규칙. 코드 작성 전 반드시 준수한다.
+- [Commit Convention](.claude/rules/commit.md) — commitlint로 커밋 컨벤션을 강제한다. 커밋 전 규칙 확인 및 메시지 검증 필수, `--no-verify` 금지.
 
 ## Commands
 
