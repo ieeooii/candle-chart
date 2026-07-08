@@ -1,7 +1,10 @@
 import { useCandleSecondsQuery } from '@/entities/candle/api/useCandleSecondsQuery'
+import { useCandleSocketBridge } from '@/entities/candle/api/useCandleSocketBridge'
 import './App.css'
 
 function App() {
+  useCandleSocketBridge()
+
   const { data, isLoading, error } = useCandleSecondsQuery({
     market: 'KRW-BTC',
     count: 5,
